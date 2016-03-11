@@ -15,7 +15,7 @@ public class FirstController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
 
-		mdl.setViewName("Success");
+		mdl.setViewName("success");
 		String message = "You have configured MVC correctly!!";
 		mdl.addObject("msg", message);
 		return mdl;
