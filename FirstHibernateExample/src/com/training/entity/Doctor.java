@@ -7,7 +7,7 @@ public class Doctor implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+
 	private int doctorCode;
 	private String doctorName;
 	private long handPhone;
