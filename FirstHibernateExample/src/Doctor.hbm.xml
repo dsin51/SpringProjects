@@ -17,5 +17,20 @@
         <property name="handPhone" type="long">
             <column name="HANDPHONE" />
         </property>
+        
+        <component name="homeAddr" class="com.training.domains.Address">
+        	<property name="addrLine1" column="HOMEADDLINE1"></property>
+        	<property name="addrLine2" column="HOMEADDLINE2"></property>
+        	<property name="city" column="HOMECITY"></property>
+        	<property name="pinCode" column="HOMEPINCODE"></property>
+        </component>
+        
+         <component name="workAddr" class="com.training.domains.Address">
+        	<property name="addrLine1" column="WORKADDLINE1"></property>
+        	<property name="addrLine2" column="WORKADDLINE2"></property>
+        	<property name="city" column="WORKCITY"></property>
+        	<property name="pinCode" column="WORKPINCODE"></property>
+        </component>
+        
     </class>
 </hibernate-mapping>

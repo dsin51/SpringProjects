@@ -2,6 +2,7 @@ package com.training.apps;
 
 import org.hibernate.*;
 
+import com.training.domains.Address;
 import com.training.entity.Doctor;
 import com.training.utils.HiberUtils;
 
@@ -13,18 +14,13 @@ public class FirstApplication {
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
 
-		Doctor doc = new Doctor(102, "Ram", 123456789);
+		Address homeAddr = new Address("Home Street", "Home Loc", "Home City", "12344");
+		Address workAddr = new Address("Work Street", "Work Loc", "Work City", "12345");
 
-		Integer key = (Integer)session.save(doc);
-		System.out.println(key); //Prints primary key
-		
-		
-		//select statement is executed
-		Doctor doc2 = (Doctor)session.get(Doctor.class,101);
-		System.out.println(doc2); 
-		
-		
-		session.save(doc);
+		Doctor newDoc = new Doctor(105, "Voldemort", 1234556, homeAddr, workAddr);
+
+		session.save(newDoc);
+
 		tx.commit();
 		factory.close();
 
