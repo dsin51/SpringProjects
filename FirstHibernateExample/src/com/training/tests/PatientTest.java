@@ -58,7 +58,7 @@ public class PatientTest {
 	}
 
 	@Test
-	public void test() {
+	public void testPolymorphicQuery() {
 
 		SessionFactory factory = HiberUtils.getFactory();
 		Session session = factory.openSession();

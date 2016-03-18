@@ -39,8 +39,7 @@ public class InPatient extends Patient {
 	@Override
 	public String toString() {
 		return "InPatient [wardNumber=" + wardNumber + ", dateOfAdmission=" + dateOfAdmission + "]";
-	}
-	
+	}	
 	@Override
 	public double calculate() {
 		return 1500;
