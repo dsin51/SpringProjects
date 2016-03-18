@@ -21,6 +21,8 @@
         
         <!-- Mandatory mapping Document -->
         <mapping resource="Doctor.hbm.xml" />
+        <mapping resource="Patient.hbm.xml" />
+        <mapping resource="InPatient.hbm.xml" />
         
     </session-factory>
 </hibernate-configuration>
